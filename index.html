@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plate and Play episode</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Caveat:wght@600;700&amp;family=Fredoka:wght@500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;family=Vazirmatn:wght@500&amp;display=swap">
+<style>
+body{margin:0;background:#FFF4E2}
+a{color:#A3182F}a:hover{color:#7A1426}
+</style>
+<style>
+[hidden]{display:none!important}
+label:has(input:checked) .item-text{text-decoration:line-through;color:#B79A9E!important}
+@media print{#watch,section[aria-label],#episodes,#print-rules,#lang-switch,#copy-list{display:none!important}}
+</style>
+<script src="app.js" defer></script>
+</head>
+<body>
+<div id="top" style="font-family: 'DM Sans', system-ui, sans-serif; color: #3A0E17; background: #FFF4E2; min-height: 100vh">
+
+<header style="display: flex; flex-wrap: wrap">
+<div style="flex: 1 1 320px; background: #7A1426; padding: 14px 28px; display: flex; align-items: center; gap: 10px; color: #FFF4E2">
+<span style="font-family: 'DM Serif Display', serif; font-style: italic; font-size: 28px">Plate</span>
+<span style="font-family: Caveat, cursive; font-size: 22px; color: #F4B43A">cook it</span>
+</div>
+<div style="flex: 1 1 320px; background: #F3F0FF; padding: 14px 28px; display: flex; align-items: center; justify-content: flex-end; gap: 14px">
+<a id="lang-switch" href="fa.html" lang="fa" dir="rtl" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 999px; background: #FFFFFF; border: 2px solid #1E1B4B; color: #1E1B4B; text-decoration: none; font-family: Vazirmatn, Tahoma, sans-serif; font-size: 14px; font-weight: 500">فارسی</a>
+<span style="font-family: Fredoka, sans-serif; font-weight: 600; font-size: 18px; color: #6B5FD3">play it</span>
+<span style="font-family: Fredoka, sans-serif; font-weight: 700; font-size: 28px; color: #1E1B4B">Play</span>
+</div>
+</header>
+
+<section style="position: relative; display: flex; flex-wrap: wrap">
+<div style="flex: 1 1 380px; min-width: 0; box-sizing: border-box; padding: 48px 48px 96px; background: #7A1426; color: #FFF4E2; display: flex; flex-direction: column; gap: 14px">
+<div style="font-family: Caveat, cursive; font-size: 28px; color: #F4B43A">tonight we cook</div>
+<h1 style="margin: 0; font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 76px; line-height: 0.95" data-f="dish">Fesenjoon</h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; max-width: 400px; color: #F6DCCB" data-f="dishIntro">Chicken cooked slowly in walnuts and pomegranate. Sweet, sour and deep.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 500">
+<span style="padding: 6px 14px; border-radius: 999px; border: 1.5px solid #F4B43A; color: #F4B43A" data-f="cookTime">3 hours</span>
+<span style="padding: 6px 14px; border-radius: 999px; border: 1.5px solid #F4B43A; color: #F4B43A" data-f="serves">Serves 4</span>
+</div>
+<svg id="dish-art" role="img" aria-label="A bowl of fesenjoon topped with pomegranate seeds" width="280" height="250" viewBox="0 0 280 250" style="align-self: center; margin-top: 8px">
+<ellipse cx="140" cy="232" rx="110" ry="12" fill="#5A0F1D"></ellipse>
+<circle cx="140" cy="122" r="112" fill="#FFF4E2"></circle>
+<circle cx="140" cy="122" r="96" fill="#EBD6B5"></circle>
+<circle cx="140" cy="122" r="82" fill="#4B1D12"></circle>
+<path d="M90 110 C110 80, 170 78, 190 112" stroke="#7A3A1C" stroke-width="8" fill="none" stroke-linecap="round"></path>
+<path d="M95 145 C120 165, 165 165, 185 140" stroke="#6B2A17" stroke-width="7" fill="none" stroke-linecap="round"></path>
+<ellipse cx="118" cy="120" rx="16" ry="11" fill="#5E2414"></ellipse>
+<ellipse cx="165" cy="128" rx="17" ry="12" fill="#5E2414"></ellipse>
+<path d="M130 92 q6 -8 12 0 q6 8 12 0" stroke="#C89B6A" stroke-width="5" fill="none" stroke-linecap="round"></path>
+<path d="M150 158 q5 -7 10 0 q5 7 10 0" stroke="#C89B6A" stroke-width="5" fill="none" stroke-linecap="round"></path>
+<circle cx="140" cy="118" r="6" fill="#E0314B"></circle><circle cx="138" cy="116" r="2" fill="#FF9AAA"></circle>
+<circle cx="112" cy="98" r="5" fill="#E0314B"></circle><circle cx="110" cy="96" r="1.6" fill="#FF9AAA"></circle>
+<circle cx="172" cy="104" r="5" fill="#E0314B"></circle><circle cx="170" cy="102" r="1.6" fill="#FF9AAA"></circle>
+<circle cx="125" cy="150" r="5" fill="#E0314B"></circle><circle cx="123" cy="148" r="1.6" fill="#FF9AAA"></circle>
+<circle cx="182" cy="138" r="5" fill="#E0314B"></circle><circle cx="180" cy="136" r="1.6" fill="#FF9AAA"></circle>
+<circle cx="100" cy="128" r="4.5" fill="#E0314B"></circle>
+<circle cx="155" cy="96" r="4.5" fill="#E0314B"></circle>
+<circle cx="146" cy="140" r="4.5" fill="#E0314B"></circle>
+</svg>
+</div>
+
+<div style="flex: 1 1 380px; min-width: 0; box-sizing: border-box; padding: 48px 48px 96px; background-color: #F3F0FF; background-image: radial-gradient(#D9D1FF 2px, transparent 2px); background-size: 22px 22px; color: #1E1B4B; display: flex; flex-direction: column; align-items: flex-end; text-align: right; gap: 14px">
+<div style="font-family: Fredoka, sans-serif; font-weight: 600; font-size: 18px; padding: 6px 14px; border-radius: 10px; background: #FFD84D; transform: rotate(3deg)">then we play</div>
+<h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: 72px; line-height: 0.95" data-f="game">Gerdoo Bazi</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; max-width: 400px; color: #3B366E" data-f="gameIntro">The walnut game. An old Iranian street game: a little hole, a line, and a pocket full of walnuts.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; font-family: Fredoka, sans-serif; font-weight: 600; font-size: 15px">
+<span style="padding: 8px 14px; border-radius: 12px; background: #FF8CC6; transform: rotate(-3deg)" data-f="players">2+ players</span>
+<span style="padding: 8px 14px; border-radius: 12px; background: #8BE3B8; transform: rotate(2deg)" data-f="gameTime">20 min</span>
+</div>
+<svg role="img" aria-label="Walnuts rolling toward a small hole, with a crowned king walnut" width="300" height="250" viewBox="0 0 300 250" style="align-self: center; margin-top: 8px">
+<ellipse cx="150" cy="200" rx="135" ry="34" fill="#E2DAFF"></ellipse>
+<line x1="40" y1="215" x2="120" y2="185" stroke="#6B5FD3" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"></line>
+<ellipse cx="215" cy="196" rx="34" ry="12" fill="#1E1B4B"></ellipse>
+<path d="M78 150 C120 60, 190 70, 210 178" stroke="#FF6FB1" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" fill="none"></path>
+<path d="M200 170 l12 10 l4 -15" stroke="#FF6FB1" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+<circle cx="70" cy="170" r="24" fill="#B9844F"></circle>
+<path d="M70 147 C62 160, 78 178, 70 193" stroke="#8A5A2E" stroke-width="3" fill="none"></path>
+<circle cx="61" cy="162" r="3" fill="#8A5A2E"></circle><circle cx="80" cy="176" r="3" fill="#8A5A2E"></circle>
+<path d="M54 140 l6 -14 l10 10 l10 -10 l6 14 z" fill="#FFD84D" stroke="#1E1B4B" stroke-width="2.5" stroke-linejoin="round"></path>
+<circle cx="125" cy="205" r="15" fill="#C99460"></circle>
+<path d="M125 191 C120 200, 130 210, 125 219" stroke="#8A5A2E" stroke-width="2.5" fill="none"></path>
+<circle cx="160" cy="214" r="13" fill="#B9844F"></circle>
+<path d="M160 202 C156 210, 164 218, 160 226" stroke="#8A5A2E" stroke-width="2.5" fill="none"></path>
+<circle cx="258" cy="208" r="12" fill="#C99460"></circle>
+<path d="M258 197 C254 204, 262 212, 258 219" stroke="#8A5A2E" stroke-width="2.5" fill="none"></path>
+<path d="M240 70 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4 z" fill="#FFD84D"></path>
+<path d="M40 60 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3 z" fill="#8BE3B8"></path>
+</svg>
+</div>
+
+<div style="position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 12px">
+<div style="width: 132px; height: 132px; border-radius: 999px; background: linear-gradient(90deg, #A3182F 50%, #6B5FD3 50%); border: 6px solid #FFFFFF; box-shadow: 0 16px 36px rgba(30,27,75,0.3); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #FFFFFF">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em">EPISODE</span>
+<span style="font-family: Fredoka, sans-serif; font-weight: 700; font-size: 50px; line-height: 1" data-f="epNum">01</span>
+</div>
+<a id="watch" href="https://youtube.com" style="display: inline-flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 22px; border-radius: 999px; background: #FFFFFF; color: #1E1B4B; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 10px 24px rgba(30,27,75,0.25)">
+<svg aria-hidden="true" width="26" height="18" viewBox="0 0 26 18"><rect width="26" height="18" rx="5" fill="#E0314B"></rect><polygon points="10 4.5 18 9 10 13.5" fill="#FFFFFF"></polygon></svg>
+Watch the episode</a>
+</div>
+</section>
+
+<section aria-label="Your score" style="background: #241018; color: #FFFFFF">
+<div style="max-width: 1120px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: Caveat, cursive; font-size: 24px; color: #F4B43A">your score</div>
+<div style="font-family: Fredoka, sans-serif; font-weight: 700; font-size: 34px"><span data-bind="scoreText" aria-live="polite">0 / 2</span></div>
+<div style="font-size: 15px; color: #E9D3D8"><span data-bind="scoreHint">Cook the dish and play the game to collect both.</span></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<button type="button" id="cooked" aria-pressed="false" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 22px; border-radius: 999px; font: inherit; font-weight: 700; font-size: 17px; cursor: pointer; background: transparent; color: #FFFFFF; border: 2px dashed #9C7F86">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#FFF4E2"></circle><circle cx="12" cy="12" r="6.5" fill="#4B1D12"></circle><circle cx="10" cy="11" r="1.8" fill="#E0314B"></circle><circle cx="14" cy="13.5" r="1.8" fill="#E0314B"></circle></svg>
+<span data-bind="cookedLabel">I cooked it</span></button>
+<button type="button" id="played" aria-pressed="false" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 22px; border-radius: 999px; font: inherit; font-weight: 700; font-size: 17px; cursor: pointer; background: transparent; color: #FFFFFF; border: 2px dashed #9C7F86">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="13" r="9" fill="#B9844F"></circle><path d="M12 4 C9 9, 15 16, 12 22" stroke="#8A5A2E" stroke-width="1.8" fill="none"></path></svg>
+<span data-bind="playedLabel">I played it</span></button>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap">
+
+<div id="plate" style="flex: 1 1 380px; min-width: 0; box-sizing: border-box; padding: 56px 44px; background: #FFF4E2; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: Caveat, cursive; font-size: 26px; color: #A3182F">the plate</span>
+<h2 style="margin: 0; font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 44px; line-height: 1">What goes in the pot</h2>
+</div>
+
+<div style="background: #FFFFFF; border-radius: 6px; padding: 26px 26px 20px; box-shadow: 0 1px 0 #EBD6B5, 0 14px 34px rgba(90,15,29,0.12); display: flex; flex-direction: column; gap: 4px; max-width: 470px; transform: rotate(-0.6deg)">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+<span style="font-family: Caveat, cursive; font-weight: 700; font-size: 36px; color: #A3182F">Shopping list</span>
+<span style="font-size: 14px; color: #7A4A50"><span data-bind="boughtText">0 of 8</span></span>
+</div>
+<div data-list="items" style="display: contents">
+<label style="display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 16px; cursor: pointer; border-bottom: 1px dashed #EBD6B5">
+<input type="checkbox" data-item style="width: 20px; height: 20px; accent-color: #A3182F">
+<span class="item-text" style="flex: 1 1 auto" data-f="label">Chicken thighs</span>
+<span class="item-text" style="color: #7A4A50" data-f="qty">1 kg</span>
+</label>
+<label style="display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 16px; cursor: pointer; border-bottom: 1px dashed #EBD6B5">
+<input type="checkbox" data-item style="width: 20px; height: 20px; accent-color: #A3182F">
+<span class="item-text" style="flex: 1 1 auto" data-f="label">Walnuts</span>
+<span class="item-text" style="color: #7A4A50" data-f="qty">500 g</span>
+</label>
+<label style="display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 16px; cursor: pointer; border-bottom: 1px dashed #EBD6B5">
+<input type="checkbox" data-item style="width: 20px; height: 20px; accent-color: #A3182F">
+<span class="item-text" style="flex: 1 1 auto" data-f="label">Pomegranate molasses</span>
+<span class="item-text" style="color: #7A4A50" data-f="qty">5 tbsp</span>
+</label>
+<label style="display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 16px; cursor: pointer; border-bottom: 1px dashed #EBD6B5">
+<input type="checkbox" data-item style="width: 20px; height: 20px; accent-color: #A3182F">
+<span class="item-text" style="flex: 1 1 auto" data-f="label">Onions</span>
+<span class="item-text" style="color: #7A4A50" data-f="qty">2</span>
+</label>
+<label style="display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 16px; cursor: pointer; border-bottom: 1px dashed #EBD6B5">
+<input type="checkbox" data-item style="width: 20px; height: 20px; accent-color: #A3182F">
+<span class="item-text" style="flex: 1 1 auto" data-f="label">Sugar</span>
+<span class="item-text" style="color: #7A4A50" data-f="qty">1 tbsp</span>
+</label>
+<label style="display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 16px; cursor: pointer; border-bottom: 1px dashed #EBD6B5">
+<input type="checkbox" data-item style="width: 20px; height: 20px; accent-color: #A3182F">
+<span class="item-text" style="flex: 1 1 auto" data-f="label">Turmeric and salt</span>
+<span class="item-text" style="color: #7A4A50" data-f="qty">1 tsp each</span>
+</label>
+<label style="display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 16px; cursor: pointer; border-bottom: 1px dashed #EBD6B5">
+<input type="checkbox" data-item style="width: 20px; height: 20px; accent-color: #A3182F">
+<span class="item-text" style="flex: 1 1 auto" data-f="label">Basmati rice</span>
+<span class="item-text" style="color: #7A4A50" data-f="qty">2 cups</span>
+</label>
+<label style="display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 16px; cursor: pointer; border-bottom: 1px dashed #EBD6B5">
+<input type="checkbox" data-item style="width: 20px; height: 20px; accent-color: #A3182F">
+<span class="item-text" style="flex: 1 1 auto" data-f="label">Extra walnuts for the game</span>
+<span class="item-text" style="color: #7A4A50" data-f="qty">10 each</span>
+</label>
+</div>
+<button type="button" id="copy-list" style="margin-top: 14px; min-height: 46px; border-radius: 999px; border: 0; background: #A3182F; color: #FFFFFF; font: inherit; font-weight: 700; cursor: pointer"><span data-bind="copyLabel">Copy the list</span></button>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 20px">
+<h3 style="margin: 0; font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 30px">How to cook it</h3>
+<div data-list="cook" style="display: contents">
+<div style="display: flex; gap: 18px; align-items: flex-start">
+<span style="flex: 0 0 44px; font-family: 'DM Serif Display', serif; font-style: italic; font-size: 44px; line-height: 1; color: #A3182F" data-f="n">1</span>
+<span style="font-size: 17px; line-height: 1.65; padding-top: 6px" data-f="text">Toast the walnuts in a dry pan for 5 minutes, then grind them fine.</span>
+</div>
+<div style="display: flex; gap: 18px; align-items: flex-start">
+<span style="flex: 0 0 44px; font-family: 'DM Serif Display', serif; font-style: italic; font-size: 44px; line-height: 1; color: #A3182F" data-f="n">2</span>
+<span style="font-size: 17px; line-height: 1.65; padding-top: 6px" data-f="text">Fry the chopped onions in a little oil until golden. Stir in the turmeric.</span>
+</div>
+<div style="display: flex; gap: 18px; align-items: flex-start">
+<span style="flex: 0 0 44px; font-family: 'DM Serif Display', serif; font-style: italic; font-size: 44px; line-height: 1; color: #A3182F" data-f="n">3</span>
+<span style="font-size: 17px; line-height: 1.65; padding-top: 6px" data-f="text">Add the walnuts and 4 cups of water. Simmer on low for about 1.5 hours, stirring now and then, until the walnut oil rises to the top.</span>
+</div>
+<div style="display: flex; gap: 18px; align-items: flex-start">
+<span style="flex: 0 0 44px; font-family: 'DM Serif Display', serif; font-style: italic; font-size: 44px; line-height: 1; color: #A3182F" data-f="n">4</span>
+<span style="font-size: 17px; line-height: 1.65; padding-top: 6px" data-f="text">Stir in the pomegranate molasses, salt and sugar. Taste it: it should be both sweet and sour.</span>
+</div>
+<div style="display: flex; gap: 18px; align-items: flex-start">
+<span style="flex: 0 0 44px; font-family: 'DM Serif Display', serif; font-style: italic; font-size: 44px; line-height: 1; color: #A3182F" data-f="n">5</span>
+<span style="font-size: 17px; line-height: 1.65; padding-top: 6px" data-f="text">Brown the chicken, add it to the pot and cook 45 minutes more. Serve with saffron rice.</span>
+</div>
+</div>
+<div style="font-family: Caveat, cursive; font-size: 24px; color: #7A4A50" data-f="tip">Tip: the longer it simmers, the darker and richer it gets.</div>
+</div>
+</div>
+
+<div id="play" style="flex: 1 1 380px; min-width: 0; box-sizing: border-box; padding: 56px 44px; background-color: #F3F0FF; background-image: radial-gradient(#D9D1FF 2px, transparent 2px); background-size: 22px 22px; color: #1E1B4B; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="align-self: flex-start; font-family: Fredoka, sans-serif; font-weight: 600; font-size: 16px; padding: 4px 12px; border-radius: 8px; background: #8BE3B8; transform: rotate(-2deg)">the play</span>
+<h2 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: 44px; line-height: 1.05">How to play it</h2>
+</div>
+
+<div style="position: relative; padding: 22px 24px; border-radius: 22px; background: #FFD84D; border: 3px solid #1E1B4B; box-shadow: 6px 6px 0 #1E1B4B">
+<div style="font-family: Fredoka, sans-serif; font-weight: 700; font-size: 15px">Why this game?</div>
+<div style="font-family: Fredoka, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.35; margin-top: 4px" data-f="why">Walnuts are the heart of fesenjoon. In this game, they are the prize.</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 700; font-size: 22px">You need</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; font-family: Fredoka, sans-serif; font-weight: 600; font-size: 16px">
+<div data-list="need" style="display: contents">
+<span style="padding: 10px 16px; border-radius: 14px; background: #FFFFFF; border: 2.5px solid #1E1B4B; transform: rotate(-2deg)">10 walnuts each</span>
+<span style="padding: 10px 16px; border-radius: 14px; background: #FFFFFF; border: 2.5px solid #1E1B4B; transform: rotate(1.5deg)">A small hole or a bowl</span>
+<span style="padding: 10px 16px; border-radius: 14px; background: #FFFFFF; border: 2.5px solid #1E1B4B; transform: rotate(-1deg)">Chalk for the line</span>
+</div>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div data-list="play" style="display: contents">
+<div style="display: flex; gap: 16px; align-items: flex-start; padding: 16px 18px; border-radius: 18px; border: 2.5px solid #1E1B4B; background: #FF8CC6; transform: rotate(-1deg)">
+<span style="flex: 0 0 auto; width: 42px; height: 42px; border-radius: 999px; background: #1E1B4B; color: #FFFFFF; font-family: Fredoka, sans-serif; font-weight: 700; font-size: 20px; display: flex; align-items: center; justify-content: center" data-f="n">1</span>
+<span style="font-size: 17px; line-height: 1.55; padding-top: 8px" data-f="text">Make a small hole in the ground, or use a bowl. Draw a line a few steps away.</span>
+</div>
+<div style="display: flex; gap: 16px; align-items: flex-start; padding: 16px 18px; border-radius: 18px; border: 2.5px solid #1E1B4B; background: #9CC8FF; transform: rotate(0.8deg)">
+<span style="flex: 0 0 auto; width: 42px; height: 42px; border-radius: 999px; background: #1E1B4B; color: #FFFFFF; font-family: Fredoka, sans-serif; font-weight: 700; font-size: 20px; display: flex; align-items: center; justify-content: center" data-f="n">2</span>
+<span style="font-size: 17px; line-height: 1.55; padding-top: 8px" data-f="text">Everyone puts the same number of walnuts in the game.</span>
+</div>
+<div style="display: flex; gap: 16px; align-items: flex-start; padding: 16px 18px; border-radius: 18px; border: 2.5px solid #1E1B4B; background: #8BE3B8; transform: rotate(-0.6deg)">
+<span style="flex: 0 0 auto; width: 42px; height: 42px; border-radius: 999px; background: #1E1B4B; color: #FFFFFF; font-family: Fredoka, sans-serif; font-weight: 700; font-size: 20px; display: flex; align-items: center; justify-content: center" data-f="n">3</span>
+<span style="font-size: 17px; line-height: 1.55; padding-top: 8px" data-f="text">Take turns throwing walnuts from the line. Every walnut that lands in the hole is yours.</span>
+</div>
+<div style="display: flex; gap: 16px; align-items: flex-start; padding: 16px 18px; border-radius: 18px; border: 2.5px solid #1E1B4B; background: #FFD84D; transform: rotate(1deg)">
+<span style="flex: 0 0 auto; width: 42px; height: 42px; border-radius: 999px; background: #1E1B4B; color: #FFFFFF; font-family: Fredoka, sans-serif; font-weight: 700; font-size: 20px; display: flex; align-items: center; justify-content: center" data-f="n">4</span>
+<span style="font-size: 17px; line-height: 1.55; padding-top: 8px" data-f="text">Now flick the rest in with one finger. Miss, and the turn passes on.</span>
+</div>
+<div style="display: flex; gap: 16px; align-items: flex-start; padding: 16px 18px; border-radius: 18px; border: 2.5px solid #1E1B4B; background: #C9BFFF; transform: rotate(-0.8deg)">
+<span style="flex: 0 0 auto; width: 42px; height: 42px; border-radius: 999px; background: #1E1B4B; color: #FFFFFF; font-family: Fredoka, sans-serif; font-weight: 700; font-size: 20px; display: flex; align-items: center; justify-content: center" data-f="n">5</span>
+<span style="font-size: 17px; line-height: 1.55; padding-top: 8px" data-f="text">Most walnuts at the end wins. Then the walnuts go in the fesenjoon.</span>
+</div>
+</div>
+</div>
+
+<a id="print-rules" href="#play" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 16px; background: #6B5FD3; color: #FFFFFF; text-decoration: none; font-family: Fredoka, sans-serif; font-weight: 700; font-size: 17px; border: 3px solid #1E1B4B; box-shadow: 4px 4px 0 #1E1B4B">Print the rules</a>
+</div>
+
+</section>
+
+<section id="episodes" hidden style="background: #FFF4E2">
+<div style="max-width: 1120px; margin: 0 auto; padding: 56px 24px 72px; display: flex; flex-direction: column; gap: 24px">
+<h2 style="margin: 0; font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 40px">More episodes</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px">
+<div data-list="episodes" style="display: contents">
+<a href="#top" style="display: flex; flex-direction: column; text-decoration: none; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 26px rgba(90,15,29,0.14)">
+<div style="display: flex; min-height: 130px">
+<div style="flex: 1 1 50%; background: #7A1426; padding: 18px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: Caveat, cursive; font-size: 20px; color: #F4B43A">plate</span>
+<span style="font-family: 'DM Serif Display', serif; font-size: 22px; line-height: 1.1; color: #FFF4E2" data-f="dish">Kuku sabzi</span>
+</div>
+<div style="flex: 1 1 50%; background: #F3F0FF; padding: 18px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: Fredoka, sans-serif; font-weight: 600; font-size: 14px; color: #6B5FD3">play</span>
+<span style="font-family: Fredoka, sans-serif; font-weight: 700; font-size: 21px; line-height: 1.1; color: #1E1B4B" data-f="game">Haft Sang</span>
+</div>
+</div>
+<div style="background: #FFFFFF; color: #3A0E17; padding: 12px 18px; font-size: 14px; font-weight: 700" data-f="num">Episode 02</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="display: flex; flex-wrap: wrap">
+<div style="flex: 1 1 300px; background: #7A1426; padding: 22px 28px; color: #F4B43A; font-family: Caveat, cursive; font-size: 26px">Cook it.</div>
+<div style="flex: 1 1 300px; background: #F3F0FF; padding: 22px 28px; color: #1E1B4B; font-family: Fredoka, sans-serif; font-weight: 700; font-size: 22px; text-align: right">Play it.</div>
+</footer>
+</div>
+</body>
+</html>
