@@ -11,6 +11,7 @@ Cook it, then play it: each episode pairs an Iranian dish with a traditional gam
 All text comes from the Google Sheet **Plate and Play: content** (tabs `Episodes`, `Ingredients`, `Steps`; the `راهنما` tab explains how to fill it in). The sheet must stay shared as "anyone with the link can view".
 
 - The page shows the newest episode with `published` = TRUE. Open another one with `?ep=<id>`, e.g. `index.html?ep=2`.
+- `photo_url` and `game_photo_url` (direct image links) replace the drawn dish and game illustrations; leave them empty to keep the drawings.
 - "More episodes" lists the other published episodes and stays hidden while there is only one.
 - If the sheet can't be loaded, the page falls back to episode 1, which is written into the HTML.
 

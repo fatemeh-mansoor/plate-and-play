@@ -152,6 +152,22 @@
       box.appendChild(el);
     });
   }
+  // Swaps the drawn illustration (#<side>-art) for a photo from the sheet, or back if there is none.
+  function showPhoto(side, url, alt, style) {
+    var art = $('#' + side + '-art'), photo = $('#' + side + '-photo');
+    if (url && !photo) {
+      photo = document.createElement('img');
+      photo.id = side + '-photo';
+      photo.style.cssText = 'align-self: center; margin-top: 8px; max-width: 100%; box-sizing: border-box; object-fit: cover; ' + style;
+      art.parentNode.insertBefore(photo, art);
+    }
+    if (photo) {
+      photo.hidden = !url;
+      if (url) { photo.src = url; photo.alt = alt; }
+    }
+    art.style.display = url ? 'none' : '';
+  }
+
   var put = function (el, key, value) { var t = $('[data-f="' + key + '"]', el); if (t) t.textContent = value; };
 
   function render(episodes, ingredients, steps) {
@@ -180,18 +196,11 @@
     watch.hidden = !ep.youtube_url;
     if (ep.youtube_url) watch.href = ep.youtube_url;
 
-    var art = $('#dish-art'), photo = $('#dish-photo');
-    if (ep.photo_url) {
-      if (!photo) {
-        photo = document.createElement('img');
-        photo.id = 'dish-photo';
-        photo.style.cssText = 'align-self: center; margin-top: 8px; width: 280px; height: 250px; object-fit: cover; border-radius: 24px';
-        art.parentNode.insertBefore(photo, art);
-      }
-      photo.src = ep.photo_url;
-      photo.alt = info.dish;
-      art.style.display = 'none';
-    }
+    var shadowX = LANG === 'fa' ? '-6px' : '6px';
+    showPhoto('dish', ep.photo_url, info.dish,
+      'width: 280px; height: 250px; border-radius: 24px');
+    showPhoto('game', ep.game_photo_url, info.game,
+      'width: 300px; height: 250px; border-radius: 22px; border: 3px solid #1E1B4B; box-shadow: ' + shadowX + ' 6px 0 #1E1B4B');
 
     var mine = function (rows) { return rows.filter(function (r) { return r.episode_id === id; }); };
     var kind = function (k) { return mine(steps).filter(function (s) { return s.kind === k; }).sort(byOrder); };
